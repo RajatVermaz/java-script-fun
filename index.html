@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Palindrom</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <form onsubmit="palindrom(event)">
+        <div class="row">
+          <h2 class="enter">
+            Enter a palendrom number or text in the text field
+          </h2>
+          <h1 id="score"></h1>
+          <input id="palin" type="text" placeholder="Ex: 12321 or NITIN" />
+
+          <button type="submit" id="button">
+            Click here to check if it's palindrom or not
+          </button>
+
+          <div id="result"></div>
+          <div class="def"></div>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/8cb6d5ab2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/palin.js"></script>
+  </body>
+</html>

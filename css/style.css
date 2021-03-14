@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('/download.png');
+  background-size: cover;
+}
+.container-fluid {
+  display: block;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 340px;
+  width: 600px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 1px 2px 20px 0px rgb(49, 42, 42);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  transition: all 1.5s ease-in-out;
+}
+.container-fluid:hover {
+  background-color: rgb(223, 128, 90);
+}
+#score {
+  color: white;
+  padding: 0 0 0 3.5rem;
+  transition: all 1.5s ease-in-out;
+}
+.container-fluid:hover #score {
+  color: rgb(207, 171, 10);
+  transform: translateX(100px) scale(1.5, 1.5);
+}
+.enter {
+  padding: 0.4rem 3rem;
+  color: rgb(10, 95, 62);
+  text-align: justify;
+}
+.row {
+  padding: 0.5rem;
+}
+#palin,
+#button,
+#dyk,
+#tryAgain {
+  border: none;
+  border-radius: 4px;
+  width: 80%;
+
+  margin-top: 40px;
+  margin-left: 60px;
+  padding: 5px;
+  background-color: rgb(3, 43, 27);
+  color: rgb(189, 96, 20);
+
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.8;
+}
+
+#button,
+#dyk,
+#tryAgain {
+  cursor: pointer;
+}
+.oho {
+  margin-top: 30px;
+  margin-left: 70px;
+  font-family: 'Akaya Telivigala', cursive;
+  color: tomato;
+}
+
+.cong {
+  margin-top: 20px;
+  margin-left: 70px;
+  font-family: 'DotGothic16', sans-serif;
+  color: rgb(13, 189, 51);
+  transition: all 1.5s ease-in-out;
+}
+.container-fluid:hover .cong {
+  color: rgb(19, 11, 8);
+}
+#know {
+  font-family: 'Kalam', cursive;
+  padding: 0.5rem 2rem;
+
+  text-align: justify;
+  color: rgb(15, 146, 44);
+}
+
+.container-fluid:hover #know {
+  color: rgb(19, 11, 8);
+}
