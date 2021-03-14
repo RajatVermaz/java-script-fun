@@ -17,7 +17,8 @@ const que1 = () => {
 
 // to print the count of maximun number of consicutive 1's
 const que2 = () => {
-  let arr1 = [1, 0, 0, 0, 0, 1, 0, 0, 0, 1];
+//   let arr1 = [1, 0, 0, 0, 0, 1, 0, 0, 0, 1];
+  let arr1 = [0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0];
   let count = 0;
   let final = 0;
   let lenArr1 = arr1.length;
