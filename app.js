@@ -1,15 +1,19 @@
 // to print only even number from given array
 
+let que1B = document.querySelector('.que1B');
+let showQue1 = document.querySelector('.showQue1');
+
 const que1 = () => {
   let arr = [4, 5, 3, 6, 8, 9, 1, 22, 43, 56];
   let lenArr = arr.length;
   for (let i = 0; i < lenArr; i++) {
     if (arr[i] % 2 == 0) {
-      console.log(arr[i]);
+      h3 = document.createElement('h4');
+      h3.innerHTML = `${arr[i]}`;
+      showQue1.append(h3);
     }
   }
 };
-que1();
 
 // to print the count of maximun number of consicutive 1's
 const que2 = () => {
@@ -52,6 +56,10 @@ que3();
 
 const apiFetch = () => {
   fetch('http://www.example.com/api/get/1', { mode: 'no-cors' })
+    .then((res) => {
+      res.text();
+      // console.log(res);
+    })
     .then((res) => {
       console.log(res);
     })
@@ -96,16 +104,17 @@ const button = document.querySelector('#button'); // this is for button function
 let toggle = true; // variable for button toggle between ascending and descending
 
 // main logic i.e. sorting the given array
+// this printSorted method is called in button: (refer index.html file)
 const printSorted = () => {
   body.innerHTML = '';
   if (toggle) {
     button.innerHTML = 'Descending order'; // dynamically inserting sorted data into browser
     toggle = false;
-    arr.sort((a, b) => a.id - b.id); // logic :- call sort function: it will compare until the elements are in sorted order
+    arr.sort((a, b) => b.id - a.id); // logic :- call sort function: it will compare until the elements are in sorted order
   } else {
     button.innerHTML = 'Ascending order'; // dynamically inserting sorted data into browser
     toggle = true;
-    arr.sort((a, b) => b.id - a.id); // logic :- call sort function: it will compare until the elements are in sorted order
+    arr.sort((a, b) => a.id - b.id); // logic :- call sort function: it will compare until the elements are in sorted order
   }
 
   const ul = document.createElement('ul'); // creating dynamically an unordered list.
