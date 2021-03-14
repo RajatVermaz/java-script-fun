@@ -10,7 +10,7 @@ const que1 = () => {
     if (arr[i] % 2 == 0) {
       h3 = document.createElement('h4');
       h3.innerHTML = `${arr[i]}`;
-      showQue1.append(h3);
+      showQue1.append(h3); // append is used for adding the content on each check in loop
     }
   }
 };
