@@ -1,4 +1,5 @@
 # java-script-fun
+
 Test your skills based on some logical questions
 
 Attempt all questions in javascript. Make sure to attempt all questions.
