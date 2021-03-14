@@ -3,18 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="heading1">
       <h1>Rajat Verma</h1>
-    </div>
-    <button onclick="apiFetch()">Click to api fetch</button>
-    <button id="button" onclick="printSorted()">Click to Sort</button>
-    <!-- <button onclick="printSorted(false)">Descending sort</button> -->
 
-    <div class="show"></div>
+      <!--Api fetch-->
+    </div>
+    <div>
+      <button class="apiFetch" onclick="apiFetch()">Click to api fetch</button>
+    </div>
+    <!--Sort by id-->
+    <div class="printSorted">
+      <button id="button" onclick="printSorted()">Click to Sort</button>
+      <!-- <button onclick="printSorted(false)">Descending sort</button> -->
+      <div class="show"></div>
+    </div>
 
     <script src="./app.js"></script>
   </body>
